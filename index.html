@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./img/Logo.png" alt="Logo">
+    </header>
+
+    <main>
+        <section class="container-mensaje">
+            <textarea name="" id="texto-input" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <p class="informacion"><i class="fas fa-exclamation-circle"></i>Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="caja-botones">
+                <button class="btn-encriptar" type="button">Encriptar</button>
+                <button class="btn-desencriptar" type="button">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="container-mensajeCopiado">
+            <textarea id="mensajeCopiado" cols="30" rows="10" readonly></textarea>
+            <div class="mensajeNoEncontrado">
+                <h5 class="primer-mensajeNoEncontrado">Ningún mensaje fue encontrado</h5>
+                <p class="segundo-mensajeNoEncontrado">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="caja-botones">
+                <button class="btn-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+</body>
+<script src="js/functions.js"></script>
+
+</html>
